@@ -1,0 +1,15 @@
+{
+  "MYSQL_HOST": "127.0.0.1",
+  "MYSQL_USER_NAME": "root",
+  "MYSQL_PASSWORD": "password",
+  "MYSQL_DATABASE": "wa-cloud",
+  "AZURE_STORAGE_CONNECTION_STRING": "",
+  "AZURE_STORAGE_ACCOUNT_NAME": "",
+  "AZURE_STORAGE_ACCOUNT_KEY": "",
+  "AZURE_CONTAINER_NAME": "",
+  "audience": "http://localhost3010",
+  "issuerBaseURL": "https://dev-1po1wxsb2j0w2z73.us.auth0.com/",
+  "tokenSigningAlg": "RS256",
+  "sendgrid_key": "",
+  "from_mail": ""
+}
