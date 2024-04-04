@@ -28,4 +28,16 @@ const getImage = async (req, res) => {
   }
 };
 
-module.exports = { getOutActions, getImage };
+const exportExcel = async (req, res) => {
+  try {
+    let email = req.headers.useremail;
+    let exportDetail = await outActionsModel.getExportDetail(email);
+
+    return res.status(200).json(exportDetail);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send("Internal Server Error");
+  }
+}
+
+module.exports = { getOutActions, getImage, exportExcel };
